@@ -19,15 +19,19 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        <Header />
-        <div className="Message-Grid">
+        <Header
+          profilePhoto={ "/images/1262316.png" } />
+        <div className="message-body">
         { this.props.messages.map((message) => {
+          console.log(message);
+          let messages = message.attributes;
             return (
-              <div key={message.id} className="message-undone">
+              <div className="Message" key={ message.id }>
                 <Message
-                  body={message.attributes.text}
-                  author={message.attributes.author_info.name}
-                  id={message.attributes.author_id}
+                  body={ messages.text }
+                  author={ messages.author_info.name }
+                  image={ messages.author_info.avatar_thumb }
+                  id={ messages.author_id }
                 />
               </div>
             );

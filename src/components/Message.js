@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Message = ({ body, author, id }) => {
-  console.log(body, "component");
+const Message = ({ body, author, id, image }) => {
   return (
-    <div className="Messages">
+    <div className="message-item">
       <div id="body"> {author} said : { body } </div><br/>
-
+      <div id="image"> <img src={image} /> </div>
     </div>
   );
 }

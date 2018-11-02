@@ -4,10 +4,13 @@ import { url } from '../lib/url';
 export const LOAD_MESSAGES = 'LOAD_MESSAGES';
 export const ERROR = 'ERROR';
 
-// creating a GET action that calls all MESSAGEs
+// creating a GET action that calls all messages
 export const loadMessages = () => {
   return (dispatch) => {
-    return Axios.get(url)
+    return Axios({
+      method: 'get',
+      url: `${ url }`
+      })
     .then(messages => {
       let dispatchData = messages.data.data;
       dispatch({
