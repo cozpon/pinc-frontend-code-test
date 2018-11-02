@@ -5,7 +5,7 @@ const Message = ({ topic, date, body, author, image, id, comments, reply}) => {
     return (
       <div className="message-grid">
         <div className="topicdate">
-          { topic }
+          { topic }  &sdot; { date }
         </div>
         <div id="message-photo">
           <img src={ image } alt="profile-photo" />
@@ -27,7 +27,7 @@ const Message = ({ topic, date, body, author, image, id, comments, reply}) => {
       return (
         <div className="message-grid">
           <div className="topicdate">
-            { topic }
+            { topic }  &sdot; { date }
           </div>
           <div id="message-photo">
             <img src={ image } alt="profile-photo" />
@@ -36,7 +36,7 @@ const Message = ({ topic, date, body, author, image, id, comments, reply}) => {
             { body }
           </div>
           <div id="message-author">
-            posted by { author }, no comments yet!
+            posted by { author }, no comments yet.
           </div>
         </div>
       );

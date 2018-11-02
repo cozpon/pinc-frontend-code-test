@@ -22,7 +22,7 @@ class Search extends Component {
       <div className="input-form">
         <input
           value={ this.state.description }
-          className="search-input"
+          id="search-input"
           type="text"
           placeholder="Search"
           onChange={ this.handleSearchInput }

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { loadMessages } from '../../actions/message.actions';
+
+import Moment from 'moment';
+
+
+import StartConvo from '../StartConvo';
 import Header from '../../components/Header';
 import Message from '../../components/Message';
 
@@ -20,11 +25,8 @@ class App extends Component {
     return (
       <div id="main">
         <Header profilePhoto={ "/images/1262316.png" } />
-
+      <StartConvo profilePhoto={ "/images/1262316.png"} />
       <div className="message-grid">
-      <div id="New">
-      blah blah
-      </div>
         { this.props.messages.map((message) => {
           let messages = message.attributes;
           if(!messages.last_activity_info.answer_info){
@@ -32,7 +34,7 @@ class App extends Component {
               <div className="Message" key={ message.id }>
                 <Message
                   topic={ messages.group['0'].title }
-                  date={ messages.created_at }
+                  date={ Moment(messages.created_at).fromNow() }
                   body={ messages.text }
                   author={ messages.author_info.name }
                   image={ messages.author_info.avatar_thumb }
@@ -47,7 +49,7 @@ class App extends Component {
               <div className="Message" key={ message.id }>
                 <Message
                   topic={ messages.group['0'].title }
-                  date={ messages.created_at }
+                  date={ Moment(messages.created_at).fromNow() }
                   body={ messages.text }
                   author={ messages.author_info.name }
                   image={ messages.author_info.avatar_thumb }

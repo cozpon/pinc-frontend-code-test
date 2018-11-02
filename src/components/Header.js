@@ -8,7 +8,6 @@ const Header = ({ profilePhoto }) => {
   return (
      <div>
       <div className="header">
-
           <img id="location" src="./images/v1.png" />
           <Link to="/feed" id="header-links" style={{ fontWeight: '800', borderBottom: '3px solid #D8D8D8'}}>
             <img src="./images/home.svg" id="header-image"/>
