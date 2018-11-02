@@ -10,23 +10,21 @@ const Header = ({ profilePhoto }) => {
       <div className="header">
 
           <img id="location" src="./images/v1.png" />
-          <Link to="/feed" id="header-links" style={{ fontWeight: '800',
-                                                      borderBottom: '3px solid #D8D8D8',
-                                                      color: '#D8D8D8'}}>
+          <Link to="/feed" id="header-links" style={{ fontWeight: '800', borderBottom: '3px solid #D8D8D8'}}>
+            <img src="./images/home.svg" id="header-image"/>
             <div id="header-text">
-            <img src="./images/home.svg" />
-            Feed
+              Feed
             </div>
           </Link>
           <Link to="/groups" id="header-links">
+            <img src="./images/users.svg" id="header-image" />
             <div id="header-text">
-              <img src="./images/users.svg" />
               Groups
             </div>
           </Link>
           <Link to="/activity" id="header-links">
+            <img src="./images/bell.svg" id="header-image" />
             <div id="header-text">
-              <img src="./images/bell.svg" />
               Activity
             </div>
           </Link>
