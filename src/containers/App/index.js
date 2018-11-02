@@ -19,22 +19,45 @@ class App extends Component {
   render() {
     return (
       <div id="main">
-        <Header
-          profilePhoto={ "/images/1262316.png" } />
-        <div className="message-body">
+        <Header profilePhoto={ "/images/1262316.png" } />
+
+      <div className="message-grid">
+      <div id="New">
+      blah blah
+      </div>
         { this.props.messages.map((message) => {
-          console.log(message);
           let messages = message.attributes;
+          if(!messages.last_activity_info.answer_info){
             return (
               <div className="Message" key={ message.id }>
                 <Message
+                  topic={ messages.group['0'].title }
+                  date={ messages.created_at }
                   body={ messages.text }
                   author={ messages.author_info.name }
                   image={ messages.author_info.avatar_thumb }
                   id={ messages.author_id }
+                  // comments= { messages.last_activity_info.author_info.avatar_thumb }
+                  // reply={messages.last_activity_info.answer_info.text}
                 />
               </div>
-            );
+              );
+            } else {
+              return (
+              <div className="Message" key={ message.id }>
+                <Message
+                  topic={ messages.group['0'].title }
+                  date={ messages.created_at }
+                  body={ messages.text }
+                  author={ messages.author_info.name }
+                  image={ messages.author_info.avatar_thumb }
+                  id={ messages.author_id }
+                  comments= { messages.last_activity_info.author_info.avatar_thumb }
+                  reply={messages.last_activity_info.answer_info.text}
+                />
+              </div>
+              );
+            }
           })
         }
       </div>

@@ -8,11 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#main {
+  background: #F5F6F8;
+  background: #666;
 }
-
 .header {
   background-color: #703FCE;
   width: 100%;
@@ -44,7 +43,7 @@ code {
   font-size: 15px;
   font-family: 'Nunito', sans-serif;
   min-width: 200px;
-  width: 150%;
+  width: 140%;
   height: 25px;
   border: none;
   color: #885DD9;
@@ -54,6 +53,7 @@ code {
   background-repeat: no-repeat;
   background-position: 38% 8px;
   transition: all 0.7s;
+  padding: 0 5% 0 5%;
 
 }
 ::placeholder {
@@ -81,14 +81,15 @@ code {
 }
 .button {
   border-radius: 30px;
-  height: 35px;
-  min-width: 9%;
+  height: 27px;
+  min-width: 77px;
   background: #FFF;
   color: #8963A0;
   font-family: 'Nunito', sans-serif;
   font-size: 90%;
   margin-right: 70px;
   margin-left: 18px;
+  border-style: none;
 }
 .button:active {
   outline: 0px;
@@ -97,9 +98,41 @@ code {
 /* M E S S A G E S */
 
 .Message {
-  width: 50%;
+  width: 100%;
+  background: #FFFFFF;
+}
+.message-grid {
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
-.message-body {
-  background-color: green;
+#message-item {
+
+}
+
+#message-body {
+  background-color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 55px;
+  margin-top: -50px;
+  padding-bottom: 20%;
+}
+
+#message-photo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+#message-photo img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
