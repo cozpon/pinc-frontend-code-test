@@ -15,11 +15,12 @@ code {
 
 .header {
   background-color: #703FCE;
-  height: 62px;
+  width: 100%;
   display: flex;
   flex: row;
-  justify-content: ;
+  justify-content: space-around;
   align-items: center;
+
 }
 
 #header-links {
@@ -29,42 +30,40 @@ code {
   font-size: 17px;
   text-decoration: none;
   justify-content: center;
-  width: 110px;
+  min-width: 90px;
   font-family: 'Nunito', sans-serif;
 }
 
 #header-text {
   margin-top: 20px;
-  margin-left: 5px;
 
 }
-
-#header-links img {
-  margin-right: 3%;
-
+#header-text img {
+  padding-right: 10px;
 }
 
 .search-input {
   text-align: center;
   font-size: 15px;
   font-family: 'Nunito', sans-serif;
-  width: 320px;
-  height: 28px;
+  width: 150%;
+  height: 25px;
   border: none;
   color: #885DD9;
   background: #502B97;
   border-radius: 28px;
   background-image: url("/images/magnify.png");
   background-repeat: no-repeat;
-  background-position: 119px 8px;
+  background-position: 30% 8px;
   transition: all 0.7s;
+  padding-right: 2px;
 }
 ::placeholder {
   color: #885DD9;
 }
 
 .input-form {
-  margin-left: 13%;
+  margin-left: 12%;
 }
 
 .search-input:focus {
@@ -76,22 +75,22 @@ code {
 #location {
   height: 28px;
   width: 25px;
-  padding-right: 20px;
-  margin-left: 15%;
+  padding-right: 1%;
+  padding-left: 10%;
 }
 #profile-photo {
-  margin-left: 2%;
+  padding-left: 9%;
 }
 
 .button {
-  border-radius: 28px;
-  height: 37px;
-  width: 105px;
+  border-radius: 30px;
+  height: 35px;
+  min-width: 9%;
   background: #FFF;
   color: #8963A0;
   font-family: 'Nunito', sans-serif;
   font-size: 110%;
-  margin-left: 2%;
+  margin-right: 5%;
 }
 .button:active {
   outline: 0px;

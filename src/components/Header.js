@@ -13,21 +13,21 @@ const Header = ({ profilePhoto }) => {
           <Link to="/feed" id="header-links" style={{ fontWeight: '800',
                                                       borderBottom: '3px solid #D8D8D8',
                                                       color: '#D8D8D8'}}>
-            <img src="./images/home.svg" />
             <div id="header-text">
+            <img src="./images/home.svg" />
             Feed
             </div>
           </Link>
           <Link to="/groups" id="header-links">
-            <img src="./images/users.svg" />
             <div id="header-text">
-            Groups
+              <img src="./images/users.svg" />
+              Groups
             </div>
           </Link>
           <Link to="/activity" id="header-links">
-            <img src="./images/bell.svg" />
             <div id="header-text">
-            Activity
+              <img src="./images/bell.svg" />
+              Activity
             </div>
           </Link>
 
