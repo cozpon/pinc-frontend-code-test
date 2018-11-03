@@ -10,7 +10,6 @@ body {
 
 #main {
   background: #F5F6F8;
-  background: #666;
 }
 .header {
   background-color: #703FCE;
@@ -101,17 +100,17 @@ input[id="search-input"]::placeholder {
 .start-body {
   display: flex;
   min-width: 230px;
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
 }
 #start-photo {
   padding-right: 15px;
 }
 #start-input {
-  width: 495px;
+  width: 595px;
   height: 29px;
   border-radius: 5px;
   border-style: none;
@@ -119,7 +118,7 @@ input[id="search-input"]::placeholder {
 }
 
 input[id="start-input"]::placeholder {
-  color: red;
+  color: #A4A4B3;
 }
 
 /* M E S S A G E S */
@@ -132,33 +131,32 @@ input[id="start-input"]::placeholder {
 .message-grid {
   color: #4d4d4d;
   min-width: 230px;
-  max-width: 550px;
+  max-width: 650px;
   margin: 0 auto;
   font-weight: 300;
-  margin-bottom: 20px;
-
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+.topicdate {
+  font-family: 'Nunito', sans-serif;
+  color: #A4A4B3;
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 12px;
 }
 
 #message-item {
-}
-
-#message-body {
-  background-color: #FFFFFF;
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  margin-left: 55px;
-  margin-top: -50px;
-  padding-bottom: 20%;
-
+  margin-left: 20px;
+  padding-bottom: 20px;
 }
 
 #message-photo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+
 }
 #message-photo img {
   display: inline;
@@ -166,4 +164,113 @@ input[id="start-input"]::placeholder {
   height: 100%;
   min-width: 100%;
   object-fit: cover;
+}
+#message-body {
+  background-color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 55px;
+  margin-top: -50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 80%;
+}
+#message-author {
+  display: flex;
+  flex: row;
+  font-family: 'Nunito', sans-serif;
+  color: #A4A4B3;
+  font-size: 13px;
+  margin-left: 55px;
+}
+#message-author a {
+  color: #A4A4B3;
+  font-weight: 700;
+  text-decoration: none;
+}
+#message-comment-photo {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+#message-comment-photo img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+
+#message-reply {
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  margin-left: 55px;
+  margin-top: -50px;
+  padding-top: 25px;
+  width: 80%;
+}
+#message-reply-author {
+  display: flex;
+  flex: row;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  margin-left: 20px;
+}
+#message-reply-author a {
+  color: #A4A4B3;
+  font-weight: 700;
+  text-decoration: none;
+}
+#message-reply-body {
+  font-family: 'Nunito', sans-serif;
+  color: #A4A4B3;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+#message-reply-photo {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 25px;
+}
+#message-reply-photo img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.react-comment {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: #A4A4B3;
+  font-weight: 700;
+}
+.react-comment img {
+  width: auto;
+  height: 40px;
+}
+#react {
+  margin-top: 5px;
+  margin-right: 25%;
+}
+#comment {
+  margin-top: 5px;
+}
+
+hr {
+  border-top: 1px solid #D8D8D8;
+  opacity: .5;
 }

@@ -37,10 +37,8 @@ class App extends Component {
                   date={ Moment(messages.created_at).fromNow() }
                   body={ messages.text }
                   author={ messages.author_info.name }
-                  image={ messages.author_info.avatar_thumb }
-                  id={ messages.author_id }
-                  // comments= { messages.last_activity_info.author_info.avatar_thumb }
-                  // reply={messages.last_activity_info.answer_info.text}
+                  authorImage={ messages.author_info.avatar_thumb }
+                  authorId={ messages.author_id }
                 />
               </div>
               );
@@ -52,10 +50,13 @@ class App extends Component {
                   date={ Moment(messages.created_at).fromNow() }
                   body={ messages.text }
                   author={ messages.author_info.name }
-                  image={ messages.author_info.avatar_thumb }
-                  id={ messages.author_id }
+                  authorImage={ messages.author_info.avatar_thumb }
+                  authorId={ messages.author_id }
                   comments= { messages.last_activity_info.author_info.avatar_thumb }
                   reply={messages.last_activity_info.answer_info.text}
+                  replyImage={messages.last_activity_info.author_info.avatar_thumb}
+                  replyAuthor={messages.last_activity_info.author_info.name}
+                  replyId={messages.last_activity_info.author_info.id}
                 />
               </div>
               );

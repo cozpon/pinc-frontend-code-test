@@ -19,7 +19,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <div id="source">
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={ App } />
         </div>
       </Router>
   </Provider>,
