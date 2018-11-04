@@ -18,7 +18,7 @@ const Message = ({ topic, date, body, author, authorImage, authorId, comments, r
             posted by&nbsp;
               <a href={`/users/${authorId}`}>{ author }</a>
             &nbsp;comments by
-            <img src={ comments } alt="profile-photo" id="message-comment-photo"/>
+            <img src={ comments } alt="profile" id="message-comment-photo"/>
           </div>
         </div>
         <hr />
@@ -37,7 +37,9 @@ const Message = ({ topic, date, body, author, authorImage, authorId, comments, r
 
         <hr />
         <div id="message-reply-photo">
-          <img src={ replyImage } alt="profile-photo" />
+          <a href={`/users/${replyId}`}>
+            <img src={ replyImage } alt="profile" />
+          </a>
         </div>
         <div id="message-reply">
           <div id="message-reply-author">
@@ -57,7 +59,7 @@ const Message = ({ topic, date, body, author, authorImage, authorId, comments, r
           </div>
           <div id="message-item">
             <div id="message-photo">
-              <img src={ authorImage } alt="profile-photo" />
+              <img src={ authorImage } alt="profile" />
             </div>
             <div id="message-body">
               { body }
@@ -70,6 +72,7 @@ const Message = ({ topic, date, body, author, authorImage, authorId, comments, r
           </div>
           <hr />
           <div className="react-comment">
+
             <img src="./images/React.png" alt="react"/>
             <div id="react">
               React

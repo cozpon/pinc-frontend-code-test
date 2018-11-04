@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+
+import Modal from '../Modal';
 
 class StartConvo extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      start: ''
+      start: '',
+      isOpen: false
     };
     this.handleStartConvoInput = this.handleStartConvoInput.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+  openModal () {
+    this.setState({
+      isOpen: true,
+    });
   }
 
+  closeModal () {
+    this.setState({
+      isOpen: false
+    });
+  }
   handleStartConvoInput(evt) {
     this.setState({
       start: (evt.target.value)
@@ -20,7 +34,7 @@ class StartConvo extends Component {
     return (
       <div className="start-body">
         <div id="start-photo">
-          <img src={ "/images/1262316.png" } />
+          <img src={ "/images/1262316.png" } alt="profile" />
         </div>
         <div className="start-input-form">
           <input
@@ -29,8 +43,17 @@ class StartConvo extends Component {
             type="text"
             placeholder="Start a conversation..."
             onChange={ this.handleStartConvoInput }
+            onClick={this.openModal}
           />
         </div>
+
+        <Modal
+          show={this.state.isOpen}
+          onClose={this.closeModal}
+          className="Modal-Backdrop" >
+          hey
+        </Modal>
+
       </div>
     );
   }

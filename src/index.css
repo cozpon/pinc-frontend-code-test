@@ -8,6 +8,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+hr {
+  border-top: 1px solid #D8D8D8;
+  opacity: .5;
+}
+
 #main {
   background: #F5F6F8;
 }
@@ -32,7 +37,7 @@ body {
 #header-text {
   margin-top: 25px;
 }
-#header-image {
+#header-links img {
   padding-right: 8px;
   margin-top: 10px;
   width: 20%;
@@ -53,7 +58,6 @@ body {
   background-position: 38% 8px;
   transition: all 0.7s;
   padding: 0 5% 0 5%;
-
 }
 input[id="search-input"]::placeholder {
   color: #885DD9;
@@ -200,12 +204,8 @@ input[id="start-input"]::placeholder {
 #message-comment-photo img {
   display: inline;
   margin: 0 auto;
-  height: 100%;
-  min-width: 100%;
   object-fit: cover;
 }
-
-
 #message-reply {
   font-family: 'Nunito', sans-serif;
   font-size: 30px;
@@ -232,7 +232,6 @@ input[id="start-input"]::placeholder {
   font-size: 12px;
   margin-left: 20px;
 }
-
 #message-reply-photo {
   width: 25px;
   height: 25px;
@@ -270,7 +269,27 @@ input[id="start-input"]::placeholder {
   margin-top: 5px;
 }
 
-hr {
-  border-top: 1px solid #D8D8D8;
-  opacity: .5;
+
+
+/* M O D A L */
+
+/* Whiteout Background */
+.Modal-Backdrop {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(72, 76, 76, 0.9);
+  padding: 25px;
+}
+
+/* Modal Image Display */
+.Modal {
+  display: block;
+  min-width: 50%;
+  max-width: 75%;
+  margin: 0px auto;
+  padding: 2%;
 }

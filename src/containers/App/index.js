@@ -13,7 +13,8 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      messages: []
+      messages: [],
+      isOpen: false
     };
   }
 
