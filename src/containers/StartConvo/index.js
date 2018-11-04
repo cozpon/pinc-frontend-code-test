@@ -51,7 +51,8 @@ class StartConvo extends Component {
             <img src={ "/images/1262316.png" } alt="profile" />
             <div id="question-name">
               <b>Rafael Doe</b> in
-              <a href="/openModal" id="add-group">&#43; Add Group </a>
+              <a href="" id="add-group">
+                &#43; Add Group </a>
             </div>
             <button id="modal-button" onClick={ this.closeModal }> X </button>
           </div>
@@ -62,7 +63,7 @@ class StartConvo extends Component {
             <div className="question-input-form">
               <div id="right-arrow">
                 <div id="arrow">
-                &#10095;
+                  &#10095;
                 </div>
               </div>
               <input
@@ -73,8 +74,16 @@ class StartConvo extends Component {
             </div>
           </div>
           <div className="modal-bottom">
-          Be anonymous
-          Post
+            <div id="anonymous">
+            <input type="checkbox" name="anonymous" value="Anonymous" />
+              Be anonymous
+            </div>
+              <button
+                className="post-button"
+                type="submit"
+                onClick={this.closeModal}>
+                Post
+              </button>
           </div>
         </Modal>
 

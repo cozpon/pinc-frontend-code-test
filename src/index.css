@@ -123,7 +123,6 @@ input[id="search-input"]::placeholder {
 #start-input:focus {
   outline: none;
 }
-
 input[id="start-input"]::placeholder {
   color: #A4A4B3;
 }
@@ -355,7 +354,7 @@ input[id="start-input"]::placeholder {
   padding-bottom: 20px;
   font-size: 22px;
   font-family: 'Nunito', sans-serif;
-  width: 520px;
+
   height: 29px;
   border-radius: 5px;
   border-style: none;
@@ -376,8 +375,8 @@ input[id="start-input"]::placeholder {
   outline: none;
 }
 #right-arrow {
-  width: 27px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   margin-top: 10px;
   border-radius: 4px;
   font-size: 15px;
@@ -388,4 +387,31 @@ input[id="start-input"]::placeholder {
 #arrow {
   margin-left: 9px;
   margin-top: 2.4px;
+}
+
+.modal-bottom {
+  display: flex;
+  padding-bottom: 20px;
+}
+.post-button {
+  border-radius: 6px;
+  height: 30px;
+  min-width: 60px;
+  background: #703FCE;
+  color: #FFF;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 20px;
+  border-style: none;
+}
+.post-button:active {
+  outline: 0px;
+}
+#anonymous {
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  margin-left: 400px;
+  padding-top: 5px;
+  color: #A4A4B3;
 }
