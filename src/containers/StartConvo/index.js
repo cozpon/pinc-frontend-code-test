@@ -42,16 +42,40 @@ class StartConvo extends Component {
             id="start-input"
             type="text"
             placeholder="Start a conversation..."
-            onChange={ this.handleStartConvoInput }
-            onClick={this.openModal}
+            onClick={ this.openModal }
           />
         </div>
 
-        <Modal
-          show={this.state.isOpen}
-          onClose={this.closeModal}
-          className="Modal-Backdrop" >
-          hey
+        <Modal show={ this.state.isOpen } className="Modal-Backdrop">
+          <div className="modal-top">
+            <img src={ "/images/1262316.png" } alt="profile" />
+            <div id="question-name">
+              <b>Rafael Doe</b> in
+              <a href="/openModal" id="add-group">&#43; Add Group </a>
+            </div>
+            <button id="modal-button" onClick={ this.closeModal }> X </button>
+          </div>
+          <div className="question-input-body">
+            <div id="question-input">
+            What is your question? Make it short and simple
+            </div>
+            <div className="question-input-form">
+              <div id="right-arrow">
+                <div id="arrow">
+                &#10095;
+                </div>
+              </div>
+              <input
+                value={ this.state.description }
+                id="question-form"
+                type="text"
+                onChange={ this.handleStartConvoInput } />
+            </div>
+          </div>
+          <div className="modal-bottom">
+          Be anonymous
+          Post
+          </div>
         </Modal>
 
       </div>

@@ -4,7 +4,6 @@ import { loadMessages } from '../../actions/message.actions';
 
 import Moment from 'moment';
 
-
 import StartConvo from '../StartConvo';
 import Header from '../../components/Header';
 import Message from '../../components/Message';
