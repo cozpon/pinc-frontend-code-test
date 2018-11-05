@@ -51,7 +51,7 @@ Scope is always visible upwards (or outwards).
 ```
 Lexical scope in Javascript means that variables which are declared outside a function can be accessed inside another function. But the opposite is not true; variables inside a function cannot be accessed outside that function.
 It's a concept based around closures.
-
+```javascript
 For example:
 let ten = 10;
 
@@ -59,7 +59,7 @@ let add = () => {
   let twenty = 20;
   return ten + twenty;
 };
-
+```
 if you call add() it will return 30.
 
 This is because the add() function can access or "see" the `ten` variable (on the global scope), which is defined before the function add().
