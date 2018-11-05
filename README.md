@@ -73,3 +73,5 @@ Any changes you make should return a new array, and not mutate the original arra
 
 # Test Two found at: 
 [165.227.11.32](http://165.227.11.32)
+It is responsive for desktop and tablet, not for mobile (since there is a mobile app already).
+
