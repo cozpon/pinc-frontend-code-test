@@ -1,5 +1,3 @@
-
-
 # Test One
 
 You will be required to write the aswers to the questions below.
@@ -51,8 +49,8 @@ Scope is always visible upwards (or outwards).
 ```
 Lexical scope in Javascript means that variables which are declared outside a function can be accessed inside another function. But the opposite is not true; variables inside a function cannot be accessed outside that function.
 It's a concept based around closures.
-```javascript
 For example:
+```javascript
 let ten = 10;
 
 let add = () => {
@@ -73,5 +71,6 @@ Any changes you make should return a new array, and not mutate the original arra
 
 # Test Two found at: 
 [165.227.11.32](http://165.227.11.32)
+
 It is responsive for desktop and tablet, not for mobile (since there is a mobile app already).
 
