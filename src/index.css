@@ -7,11 +7,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* ****** D I R E C T O R Y *******
+
+            HEADER
+
+            START CONVO
+
+            MESSAGES
+
+            MODAL
+*/
 
 hr {
   border-top: 1px solid #D8D8D8;
   opacity: .5;
 }
+
 
 #main {
   background: #F5F6F8;
@@ -96,6 +107,26 @@ input[id="search-input"]::placeholder {
 }
 .button:active {
   outline: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    justify-content: flex-start;
+  }
+  #profile-photo {
+    padding-left: 0%;
+    margin-left: -10px;
+    padding-right: 15px;
+  }
+  .button {
+    margin-left: -10px;
+  }
+  #search-input {
+    width: 110%;
+    padding: 0px;
+    margin-left: -30px;
+    background-position: 30% 6px;
+  }
 }
 
 
