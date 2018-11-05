@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>users</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Web-feed-page" transform="translate(-367.000000, -22.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="users" transform="translate(368.000000, 23.000000)">
+                <path d="M14.5454545,16.3636364 L14.5454545,14.5454545 C14.5454545,12.5371464 12.9173991,10.9090909 10.9090909,10.9090909 L3.63636364,10.9090909 C1.62805546,10.9090909 2.01858732e-16,12.5371464 0,14.5454545 L0,16.3636364" id="Shape"></path>
+                <circle id="Oval" cx="7.27272727" cy="3.63636364" r="3.63636364"></circle>
+                <path d="M20,16.3636364 L20,14.5454545 C19.9987639,12.8882889 18.8772716,11.4415638 17.2727273,11.0272727" id="Shape"></path>
+                <path d="M13.6363636,0.118181818 C15.2453771,0.530154352 16.3707666,1.97999195 16.3707666,3.64090909 C16.3707666,5.30182623 15.2453771,6.75166383 13.6363636,7.16363636" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
