@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/src/lib/url.js
 
 # testing
 /coverage
