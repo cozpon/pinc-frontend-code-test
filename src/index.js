@@ -9,6 +9,7 @@ import './index.css';
 import registerServiceWorker from './lib/registerServiceWorker';
 
 import App from './containers/App';
+import Login from './containers/Login';
 
 const store = createStore(
   reducers,
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Router>
       <div id="source">
         <Route exact path="/" component={ App } />
+        <Route path="/login" component={ Login } />
         </div>
       </Router>
   </Provider>,

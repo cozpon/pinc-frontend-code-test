@@ -4,7 +4,9 @@ import { combineReducers } from 'redux';
 
 // I separated my reducer files in case I want to expand this project.
 import messagesList from './messagesList';
+import userAuth from './userAuth';
 
 export default combineReducers({
-  messagesList
+  messagesList,
+  userAuth
 });

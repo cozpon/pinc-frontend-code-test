@@ -9,7 +9,7 @@ export const loadMessages = () => {
   return (dispatch) => {
     return Axios({
       method: 'get',
-      url: `${ url }`
+      url: `${ url }/questions`
       })
     .then(messages => {
       let dispatchData = messages.data.data;
